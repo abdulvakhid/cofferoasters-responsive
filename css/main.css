@@ -816,13 +816,17 @@ body {
 .works__tittle {
     margin: 0;
     margin-bottom: 24px;
+    text-align: center;
+}
+
+.works__title-link {
     font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
     font-size: 28px;
     line-height: 32px;
-    text-align: center;
     color: var(--color-darkgrey);
+    text-decoration: none;
 }
 
 .works__text {
@@ -876,9 +880,10 @@ body {
 
     .works__list::before {
         content: "";
-        background-image: url("../images/works-listbefore.svg");
+        background-image: url("../images/works-desktopbefor.svg");
         background-repeat: no-repeat;
-        width: 497px;
+        background-size: contain;
+        width: 513px;
         height: 31px;
         position: absolute;
         top: -73px;
@@ -906,7 +911,18 @@ body {
     }
 }
 
-
+@media only screen and (min-width:750px) {
+    .works__list::before {
+        content: "";
+        background-image: url("../images/works-desktopbefor.svg");
+        background-repeat: no-repeat;
+        width: 643px;
+        height: 31px;
+        position: absolute;
+        top: -73px;
+        left: 28px;
+    }
+}
 
 @media only screen and (min-width: 1000px) {
 
@@ -1127,10 +1143,384 @@ body {
 
 /* =========== ABOUT PAGE CSS =========  */
 
-/* ==== ABOUT SECTION CSS  */
+/* ==== ABOUT SECTION CSS ===== */
+
+.about {
+    padding-bottom: 120px;
+}
+
+.about__box {
+    padding: 111px 20px 87px 20px;
+    background-color: #A2A2A2;
+    background-image: url("../images/about-mobilebg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: calc(50%) calc(50%);
+    border-radius: 10px;
+}
+
+.about__content {
+    width: 100%;
+    max-width: 208px;
+    margin: 0 auto;
+}
+
+.about__topic {
+    margin: 0;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.about__topic-link {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--body-bgcolor);
+    text-decoration: none;
+}
+
+
+.about__text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+@media only screen and (min-width: 660px) {
+
+    .about__box {
+        padding: 118px 233px 118px 58px;
+        background-image: url("../images/about-tabletbg.png");
+    }
+
+    .about__content {
+        width: 100%;
+        max-width: 400px;
+        margin: 0;
+        margin-right: auto;
+    }
+
+    .about__topic {
+        text-align: start;
+    }
+
+    .about__topic-link {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .about__text {
+        text-align: start;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .about__box {
+        padding: 137px 470px 137px 85px;
+        background-image: url("../images/about-desktopbg.png");
+    }
+
+    .about__content {
+        width: 100%;
+        max-width: 445px;
+    }
+
+    .about__topic {
+        text-align: start;
+    }
+
+    .about__topic-link {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .about__text {
+        text-align: start;
+    }
+
+}
 
 
 
 
 
+/* ==== OUR COMMITMENT SECTION CSS ===== */
 
+.commit {
+    padding-bottom: 200px;
+}
+
+.commit__img-box {
+    margin-bottom: 48px;
+}
+
+.commit__img {
+    width: 100%;
+    max-width: 270px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.commit__content {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.commit__topic {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: var(--color-darkgrey);
+}
+
+.commit__text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--color-darkgrey);
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+@media only screen and (min-width:660px) {
+
+    .commit {
+        padding-bottom: 270px;
+    }
+
+    .commit__img-box {
+        margin-right: 69px;
+        margin-bottom: 0;
+    }
+
+    .commit__img {
+        width: 100%;
+        max-width: 281px;
+        height: 470px;
+        margin: 0;
+    }
+
+    .commit__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .commit__content {
+        width: 100%;
+        max-width: 339px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .commit__topic {
+        font-size: 32px;
+        line-height: 48px;
+        text-align: start;
+    }
+
+    .commit__text {
+        text-align: start;
+    }
+
+}
+
+@media only screen and (min-width:1000px) {
+
+    .commit {
+        padding-bottom: 244px;
+    }
+
+    .commit__img-box {
+        margin-right: 125px;
+    }
+
+    .commit__img {
+        width: 100%;
+        max-width: 445px;
+        height: 520px;
+        margin: 0;
+    }
+
+    .commit__box {
+        width: 100%;
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
+    .commit__content {
+        width: 100%;
+        max-width: 540px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .commit__topic {
+        font-size: 40px;
+        line-height: 48px;
+        text-align: start;
+    }
+
+    .commit__text {
+        text-align: start;
+    }
+
+}
+
+
+
+/* ==== QUALITY SECTION CSS ===== */
+
+.quality {
+    padding-bottom: 120px;
+}
+
+.quality__box {
+    padding: 142px 10px 61px;
+    background-color: #293039;
+    border-radius: 10px;
+}
+
+.quality__content {
+    width: 100%;
+    max-width: 279px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.quality__content::before {
+    content: "";
+    position: absolute;
+    top: -211px;
+    left: 13px;
+    background-image: url(../images/about-mobilquality.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 240px;
+    height: 156px;
+    border-radius: 10px;
+}
+
+
+.quality__topic {
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--body-bgcolor);
+}
+
+.quality__text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--body-bgcolor);
+    opacity: 0.8;
+}
+
+
+@media only screen and (min-width: 350px) {
+    .quality__content::before {
+        width: 279px;
+        left: 3px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 660px) {
+
+    .quality {
+        padding-bottom: 144px;
+    }
+
+    .quality__box {
+        padding: 224px 74px 74px 67px;
+    }
+
+    .quality__content {
+        width: 100%;
+        max-width: 540px;
+    }
+
+    .quality__content::before {
+        width: 573px;
+        height: 320px;
+        top: -386px;
+        left: -47px;
+        ;
+    }
+
+    .quality__topic {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+    .quality {
+        padding-bottom: 144px;
+    }
+
+    .quality__box {
+        padding: 88px 0 176px 85px;
+    }
+
+    .quality__content {
+        margin: 0;
+        margin-right: auto;
+    }
+
+    .quality__content::before {
+        background-image: url("../images/cofe-aboutdesktop.png");
+        width: 445px;
+        height: 474px;
+        top: -176px;
+        left: 666px;
+    }
+
+    .quality__topic {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .quality__text {
+        text-align: start;
+    }
+
+}
+
+
+
+/* ==== OUR HEADQUARTERS SECTION CSS ===== */
