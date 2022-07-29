@@ -965,8 +965,6 @@ body {
         margin: 0;
     }
 
-
-
     .works__tittle {
         font-size: 32px;
         line-height: 36px;
@@ -997,9 +995,7 @@ body {
     .works__link:hover {
         background-color: #66D2CF;
     }
-
 }
-
 
 
 
@@ -1066,7 +1062,6 @@ body {
 }
 
 
-
 @media only screen and (min-width: 660px) {
 
     .site-footer__box {
@@ -1086,14 +1081,10 @@ body {
         margin-bottom: 65px;
     }
 
-
-
     .site-footer__item:not(:last-child) {
         margin-right: 32px;
         margin-bottom: 0;
     }
-
-
 }
 
 
@@ -1132,10 +1123,7 @@ body {
     .site-footer__social-img:hover {
         color: #FDD6BA;
     }
-
 }
-
-
 
 
 
@@ -1161,7 +1149,7 @@ body {
 
 .about__content {
     width: 100%;
-    max-width: 208px;
+    max-width: 231px;
     margin: 0 auto;
 }
 
@@ -1219,7 +1207,6 @@ body {
     .about__text {
         text-align: start;
     }
-
 }
 
 @media only screen and (min-width: 1000px) {
@@ -1246,11 +1233,7 @@ body {
     .about__text {
         text-align: start;
     }
-
 }
-
-
-
 
 
 /* ==== OUR COMMITMENT SECTION CSS ===== */
@@ -1320,6 +1303,8 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
+        max-width: 700px;
     }
 
     .commit__content {
@@ -1340,7 +1325,6 @@ body {
     .commit__text {
         text-align: start;
     }
-
 }
 
 @media only screen and (min-width:1000px) {
@@ -1384,9 +1368,7 @@ body {
     .commit__text {
         text-align: start;
     }
-
 }
-
 
 
 /* ==== QUALITY SECTION CSS ===== */
@@ -1421,7 +1403,6 @@ body {
     border-radius: 10px;
 }
 
-
 .quality__topic {
     margin: 0;
     margin-bottom: 24px;
@@ -1443,17 +1424,6 @@ body {
     opacity: 0.8;
 }
 
-
-@media only screen and (min-width: 350px) {
-    .quality__content::before {
-        width: 279px;
-        left: 3px;
-    }
-
-}
-
-
-
 @media only screen and (min-width: 660px) {
 
     .quality {
@@ -1470,22 +1440,18 @@ body {
     }
 
     .quality__content::before {
-        width: 573px;
-        height: 320px;
-        top: -386px;
-        left: -47px;
-        ;
+        width: 505px;
+        height: 297px;
+        top: -372px;
+        left: auto;
+        right: auto;
     }
 
     .quality__topic {
         font-size: 32px;
         line-height: 48px;
     }
-
-
-
 }
-
 
 @media only screen and (min-width: 1000px) {
 
@@ -1504,10 +1470,10 @@ body {
 
     .quality__content::before {
         background-image: url("../images/cofe-aboutdesktop.png");
-        width: 445px;
-        height: 474px;
-        top: -176px;
-        left: 666px;
+        width: 400px;
+        height: 314px;
+        top: -161px;
+        left: 545px;
     }
 
     .quality__topic {
@@ -1518,9 +1484,222 @@ body {
     .quality__text {
         text-align: start;
     }
-
 }
 
 
 
 /* ==== OUR HEADQUARTERS SECTION CSS ===== */
+
+.headquarter {
+    padding-bottom: 120px;
+}
+
+.headquarter__box {
+    width: 100%;
+    max-width: 327px;
+    margin: 0 auto;
+}
+
+.headquarter__topic {
+    margin: 0;
+    margin-bottom: 72px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--color-grey);
+}
+
+.headquarter__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.headquarter__item {
+    width: 100%;
+    max-width: 327px;
+    margin: 0 auto;
+    padding-top: 97px;
+    position: relative;
+}
+
+.headquarter__item:not(:last-child) {
+    margin-bottom: 80px;
+}
+
+.headquarter__item::before {
+    content: "";
+    background-image: url("../images/uk.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    left: 125px;
+}
+
+.headquarter__item:nth-child(2):before {
+    background-image: url("../images/canada.svg");
+}
+
+.headquarter__item:nth-child(3):before {
+    background-image: url("../images/australia.svg");
+}
+
+.headquarter__tittle {
+    margin: 0;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.headquarter__tittle-link {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 36px;
+    color: var(--color-darkgrey);
+    text-decoration: none;
+}
+
+.headquarter__addres-link {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--color-darkgrey);
+    text-decoration: none;
+}
+
+.headquarter__addres {
+    text-align: center;
+}
+
+.headquarter__tel {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--color-darkgrey);
+    text-decoration: none;
+}
+
+@media only screen and (min-width:660px) {
+
+    .headquarter {
+        padding-bottom: 144px;
+    }
+
+    .headquarter__box {
+        width: 100%;
+        max-width: 700px;
+        margin: 0;
+        margin-right: auto;
+        padding-left: 40px;
+    }
+
+    .headquarter__topic {
+        text-align: start;
+    }
+
+    .headquarter__list {
+        display: flex;
+        width: 100%;
+        max-width: 688px;
+        margin-bottom: 0;
+    }
+
+    .headquarter__item {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .headquarter__tittle {
+        text-align: start;
+    }
+
+    .headquarter__tittle-link {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .headquarter__addres {
+        text-align: start;
+    }
+
+    .headquarter__item:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .headquarter__item::before {
+        left: 0;
+    }
+
+    .headquarter__item:nth-child(2):before {
+        background-image: url("../images/canada.svg");
+        left: 0;
+    }
+
+    .headquarter__item:nth-child(3):before {
+        background-image: url("../images/australia.svg");
+        left: 0;
+    }
+}
+
+
+@media only screen and (min-width:1000px) {
+
+    .headquarter {
+        padding-bottom: 168px;
+    }
+
+    .headquarter__box {
+        width: 100%;
+        max-width: 1050px;
+        margin: 0;
+        margin-right: 0;
+        padding-left: 85px;
+    }
+
+    .headquarter__topic {
+        text-align: start;
+    }
+
+    .headquarter__list {
+        display: flex;
+        width: 100%;
+        max-width: 1000px;
+        margin-bottom: 0;
+    }
+
+    .headquarter__item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .headquarter__tittle {
+        text-align: start;
+    }
+
+    .headquarter__tittle-link {
+        font-size: 25px;
+        line-height: 36px;
+    }
+
+    .headquarter__addres {
+        text-align: start;
+    }
+
+    .headquarter__item:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 95px;
+    }
+
+    .headquarter__item::before {
+        left: 0;
+    }
+}
