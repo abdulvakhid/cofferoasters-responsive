@@ -1,13 +1,19 @@
-var elModalOpenButton = document.querySelector(".site-header__menu-btn");
-var elModal = document.querySelector(".site-header__inner");
+var elModalOpenButton = document.querySelector(".drink__order-link");
+var elModal = document.querySelector(".modal");
+var elModalsclose = document.querySelector(".modal__link-tablet")
+
 
 elModalOpenButton.addEventListener("click", function(){
-  elModal.classList.add("site-header__sitenav");
+  elModal.classList.add("modal__show");
 })
 
 
-var elModalCloseButton = document.querySelector(".site-header__menu-btn");
+var elModalCloseButton = document.querySelector(".modal__link");
 
 elModalCloseButton.addEventListener("click" , function (){
-  elModal.classList.remove("site-header__sitenav");
+  elModal.classList.remove("modal__show");
+})
+
+elModalsclose.addEventListener("click" , function (){
+  elModal.classList.remove("modal__show");
 })

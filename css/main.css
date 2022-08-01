@@ -1703,3 +1703,766 @@ body {
         left: 0;
     }
 }
+
+
+
+
+/* ===== subscribe css =====  */
+
+.create {
+    padding-bottom: 120px;
+}
+
+.create__box {
+    padding: 101px 24px 136px;
+    background-image: url("../images/mobile-subscribe.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.create__content {
+    width: 100%;
+    max-width: 279px;
+    margin: 0 auto;
+
+}
+
+.create__topic {
+    margin: 0;
+    margin-bottom: 22px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 33px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--body-bgcolor);
+}
+
+.create__text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--body-bgcolor);
+    mix-blend-mode: normal;
+    opacity: 0.8
+}
+
+@media only screen and (min-width:660px) {
+
+    .create {
+        padding-bottom: 144px;
+    }
+
+    .create__box {
+        padding: 127px 225px 127px 58px;
+        background-image: url("../images/tablet-subs.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .create__content {
+        width: 100%;
+        max-width: 398px;
+    }
+
+    .create__topic {
+        font-size: 48px;
+        line-height: 48px;
+        text-align: start;
+    }
+
+    .create__text {
+        text-align: start;
+    }
+
+}
+
+
+
+@media only screen and (min-width:1000px) {
+
+    .create {
+        padding-bottom: 168px;
+    }
+
+    .create__box {
+        padding: 134px 600px 134px 85px;
+        background-image: url("../images/desktop-subs.png");
+    }
+
+
+    .create__content {
+        width: 100%;
+        max-width: 500px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .create__topic {
+        margin-bottom: 32px;
+        font-size: 72px;
+        line-height: 72px;
+        text-align: start;
+    }
+
+    .create__text {
+        text-align: start;
+    }
+
+}
+
+
+/* works section in subscribe  */
+
+
+
+.works--active {
+    padding-top: 0;
+    padding-bottom: 120px;
+    background-color: #2C343E;
+}
+
+.works__box--active {
+    padding: 80px 2px;
+    background-color: #2C343E;
+}
+
+
+
+.works-item--active {
+    width: 226px;
+}
+
+.works__title-link--active {
+    color: var(--body-bgcolor);
+}
+
+.works__text--active {
+    color: var(--body-bgcolor);
+}
+
+@media screen and (min-width:660px) {
+
+    .works--active {
+        background-color: #2C343E;
+
+    }
+
+    .works__box--active {
+        padding-top: 176px;
+
+    }
+}
+
+@media screen and (min-width:1000px) {
+
+    .works--active {
+        background-color: #fff;
+    }
+
+    .works__box--active {
+
+        padding: 198px 150px 100px 85px;
+    }
+
+    .works__list--active {
+        padding-left: 70px;
+        margin-bottom: 0;
+    }
+}
+
+
+
+/* driks section css  */
+
+.drink {
+    padding-top: 120px;
+}
+
+
+.drink__list-ol {
+    display: none;
+}
+
+
+.drink {
+    padding-bottom: 120px;
+}
+
+.drink__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.drink__item {
+    width: 100%;
+    max-width: 328px;
+    margin: 0 auto;
+    margin-bottom: 88px;
+
+}
+
+.drink__summary {
+    margin-bottom: 32px;
+    list-style: none;
+    position: relative;
+}
+
+.drink__summary::after {
+    content: "";
+    background-image: url("../images/icon-summary.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 19px;
+    height: 12px;
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    transform: rotate(-180deg);
+
+}
+
+details[open] .drink__summary::after {
+    transform: rotate(0deg);
+    transition: 0.5s ease;
+}
+
+
+
+.drink__item-topic {
+    margin: 0;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #83888F;
+}
+
+.drink__label {
+
+
+    border-radius: 8px;
+}
+
+.drink__label-card {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 24px;
+    width: 100%;
+    max-width: 328px;
+    background-color: #F4F1EB;
+    border-radius: 8px;
+}
+
+.drink__label--last {
+    margin-bottom: 0;
+}
+
+.drink__card-title {
+    margin-bottom: 8px;
+    display: block;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--color-darkgrey);
+}
+
+.drink__card-text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+
+input:checked~.drink__label-card {
+    background-color: #0E8784;
+}
+
+input:checked~.drink__label-card>.drink__card-title {
+    color: var(--body-bgcolor);
+}
+
+
+input:checked~.drink__label-card>.drink__card-text {
+    color: var(--body-bgcolor);
+}
+
+
+.drink__order {
+    width: 100%;
+    max-width: 328px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    padding: 32px 24px;
+    background-color: #293039;
+    border-radius: 10px;
+}
+
+.drink__order-heading {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.drink__order-text {
+    margin: 0;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.drink__order-list {
+    color: #0E8784;
+}
+
+.drink__order-link {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 16px 35px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--body-bgcolor);
+    background-color: #0E8784;
+    border-radius: 6px;
+    border: transparent;
+}
+
+
+
+@media only screen and (min-width:660px) {
+
+    .drink {
+        padding-bottom: 144px;
+    }
+
+    .drink__item {
+        width: 100%;
+        max-width: 800px;
+        margin-bottom: 88px;
+    }
+
+    .drink__summary {
+        margin-bottom: 40px;
+    }
+
+    .drink__item-topic {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+
+    .drink__label-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .drink__label-card {
+        width: 100%;
+        max-width: 223px;
+        margin-right: 10px;
+    }
+
+
+    br {
+        display: none;
+    }
+
+    .drink__order {
+        width: 100%;
+        max-width: 700px;
+        padding: 27px 44px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .drink__order-heading {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .drink__order-text {
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+
+@media only screen and (min-width:725px) {
+
+    .drink {
+        padding-bottom: 144px;
+    }
+
+    .drink__item {
+        width: 100%;
+        max-width: 800px;
+        margin-bottom: 88px;
+    }
+
+    .drink__summary {
+        margin-bottom: 40px;
+    }
+
+    .drink__item-topic {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .drink__label-box {
+
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .drink__label-card {
+        width: 100%;
+        max-width: 223px;
+    }
+
+    br {
+        display: none;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width:1000px) {
+
+    .drink {
+        padding-bottom: 168px;
+    }
+
+    .drink__context {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .drink__list-ol {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .drink__item-ol {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 58px;
+        font-family: 'Fraunces 9pt';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--color-darkgrey);
+        border-bottom: 1px solid #83888F;
+        opacity: 0.4;
+        position: relative;
+    }
+
+    .drink__item-ol:hover {
+        color: black;
+        opacity: 1;
+    }
+
+    .drink__item-ol::before {
+        content: "";
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 34px;
+        height: 19px;
+        position: absolute;
+        top: 27px;
+        left: 0;
+    }
+
+    .drink__item-ol:nth-child(1)::before {
+        background-image: url("../images/001.svg");
+    }
+
+    .drink__item-ol:nth-child(2)::before {
+        background-image: url("../images/002.svg");
+    }
+
+    .drink__item-ol:nth-child(3)::before {
+        background-image: url("../images/03.svg");
+    }
+
+    .drink__item-ol:nth-child(4)::before {
+        background-image: url("../images/04.svg");
+    }
+
+    .drink__item-ol:nth-child(5)::before {
+        background-image: url("../images/05.svg");
+        border-bottom: none;
+    }
+
+
+
+
+    .drink__list {
+        margin-bottom: 84px;
+    }
+
+    .drink__item {
+        width: 100%;
+        max-width: 730px;
+        margin-bottom: 88px;
+        margin: 0;
+    }
+
+    .drink__summary {
+        margin-bottom: 56px;
+    }
+
+    .drink__item-topic {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .drink__label-card {
+        width: 100%;
+        max-width: 225px;
+        height: 250px;
+        margin-bottom: 88px;
+        padding: 32px 28px 84px 28px;
+    }
+
+    .drink__label-card:hover {
+        background-color: #FDD6BA;
+    }
+
+    .drink__card-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .drink__order-link {
+        cursor: pointer;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .drink__order-link:hover {
+        background-color: #66D2CF;
+    }
+
+}
+
+
+
+/* === MODAL CSS =====  */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__show {
+    display: block;
+
+}
+
+.modal__window {
+  position: relative;
+    width: 85%;
+    max-width: 327px;
+    margin: 0 auto;
+    border-radius: 8px;
+    top: 5%;
+}
+
+
+
+.modal__topic-box {
+    padding: 10px 30px 10px 24px;
+    background-color: #2E3743;
+}
+
+.modal__topic {
+    margin: 0;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+
+.modal__content {
+    width: 100%;
+    padding: 20px 20px 24px 20px;
+    background-color: #FEFCF7;
+
+}
+
+.modal__text {
+    margin: 0;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: var(--color-grey);
+}
+
+.modal__text-active {
+    color: #0E8784;
+}
+
+.modal__info {
+    margin-top: 0;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--color-darkgrey);
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+.modal__tablet{
+display: none;
+}
+
+.modal__link {
+    padding: 16px 16px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--body-bgcolor);
+    background-color: #0E8784;
+    border-radius: 6px;
+    border: transparent;
+}
+
+
+
+.modal__data{
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+    text-align: end;
+    margin-right: 13px;
+}
+
+ .modal__link-tablet{
+padding: 15px 64px;
+font-family: 'Fraunces';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+color: #FEFCF7;
+background-color: #0E8784;
+border-radius: 6px;
+border: transparent;
+} 
+
+
+
+
+@media only screen and (min-width:660px) {
+    
+    .modal__window {
+        position: relative;
+          width: 85%;
+          max-width: 540px;
+          margin: 0 auto;
+          border-radius: 8px;
+          top: 5%;
+      }
+
+    .modal__topic-box {
+        padding: 48px 148px 40px 56px;
+        background-color: #2E3743;
+    }
+
+    .modal__content {
+        width: 100%;
+        padding: 56px;
+        background-color: #FEFCF7;
+    
+    }
+
+    .modal__link{
+    display: none;
+    }
+   
+    .modal__info{
+    margin-bottom: 47px;
+    }
+
+    .modal__tablet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .modal__strong{
+        font-family: 'Fraunces 9pt';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+        color: #333D4B;
+    }
+
+}
+
+
+
+@media only screen and (min-width:1000px) {
+    
+    .modal__window {
+          top: 10%;
+      }
+
+    .modal__topic-box {
+        padding: 48px 148px 40px 56px;
+        background-color: #2E3743;
+    }
+
+    .modal__content {
+        width: 100%;
+        padding: 56px;
+        background-color: #FEFCF7;
+    
+    }
+
+}
